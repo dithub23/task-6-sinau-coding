@@ -225,3 +225,11 @@ function openModal() {
 function closeModal() {
   document.getElementById("modal").style.display = "none";
 }
+
+function openFlowchart() {
+  document.getElementById("flowchartModal").style.display = "block";
+}
+
+function closeFlowchart() {
+  document.getElementById("flowchartModal").style.display = "none";
+}
