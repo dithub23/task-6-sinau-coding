@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sport Center Rental</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+
+    <div class="container">
+      <h1 class="title">🏟️ أديان شاه 🏟️</h1>
+      <h2 class="title">Sport Center Rental</h2>
+      <p class="subtitle">Sistem Perhitungan Biaya Sewa Lapangan</p>
+
+      <div class="card">
+        <h2>⚽ Futsal</h2>
+        <label>Jumlah Lapangan</label>
+        <input
+          type="number"
+          id="jumlahFutsal"
+          placeholder="Masukkan jumlah lapangan"
+          min="0"
+        />
+        <div id="jamFutsal" class="jam-container"></div>
+      </div>
+
+      <div class="card">
+        <h2>🏸 Badminton</h2>
+        <label>Jumlah Lapangan</label>
+        <input
+          type="number"
+          id="jumlahBadminton"
+          placeholder="Masukkan jumlah lapangan"
+          min="0"
+        />
+        <div id="jamBadminton" class="jam-container"></div>
+      </div>
+
+      <button class="btn" onclick="hitungSewa()">Hitung Biaya</button>
+
+      <div id="summary"></div>
+    </div>
+
+    <!-- MODAL RINCIAN -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>📊 Rincian Biaya Sewa</h2>
+        <div id="detailOutput"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
